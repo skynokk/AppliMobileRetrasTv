@@ -7,7 +7,21 @@
              x:Class="RetrasTv.Description">
     
     <StackLayout>
-        <Label Text="Hello Xamarin.Forms!" />
-        <Image Source="Test" />
+        <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+        <StackLayout>
+                <Grid>
+                    <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="0"/>
+                    <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_1" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+                 <Grid>
+                <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_2" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="0"/>
+                <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_3" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc3" IsVisible="False">Morbi sed ex vitae nulla condimentum mollis quis ac mauris. Aenean tempor ultrices hendrerit. Vivamus fermentum justo a nunc vulputate, eu laoreet quam volutpat. In hac habitasse platea dictumst. Maecenas malesuada enim turpis, a interdum elit commodo nec. Mauris iaculis, turpis at condimentum scelerisque, nisi magna finibus diam, eu commodo eros sem vel est. Aenean accumsan malesuada mi eu feugiat.</Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc1" IsVisible="False">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ultrices justo, a mollis elit. Donec laoreet leo id leo feugiat, non placerat nisl mattis. Nullam pretium feugiat accumsan. Aliquam aliquam dui in ligula lobortis, quis viverra purus pretium. Aliquam at arcu nec diam finibus accumsan in ac justo. Nullam sit amet dictum libero, sed blandit urna. Praesent elementum, ligula et tempus dapibus, dui orci consequat sapien, sed volutpat lorem magna vitae magna. Nam pretium eleifend arcu, a fringilla odio facilisis id. Sed vel neque vel lorem fringilla suscipit non non est. Nunc finibus blandit neque, sed placerat ex. Donec facilisis pretium eros, quis rhoncus arcu posuere eget. Nam id semper magna. Curabitur volutpat orci eleifend arcu aliquet, eu porta dolor aliquam. Donec purus augue, mattis at aliquam eget, finibus non libero. Morbi ac velit sodales, fermentum massa cursus, accumsan nisi. Maecenas ac pellentesque nisi.</Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc2" IsVisible="False">Sed ac urna sollicitudin felis porta ornare. Nam sit amet molestie est, faucibus bibendum ante. Donec id luctus leo. Etiam eget metus eu metus lobortis aliquet nec sit amet sem. Nullam eleifend in mauris et molestie. Nullam sollicitudin consequat dictum. Etiam at enim nec velit facilisis porta venenatis nec arcu.</Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc4" IsVisible="False">Proin sodales, justo non aliquam fermentum, dolor tellus ultricies lacus, quis condimentum ante nisl porta libero. Nulla nec ex porttitor urna faucibus accumsan. Fusce quis molestie odio, eu porttitor nibh. Morbi a auctor ipsum. Phasellus vitae quam turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur eget nunc id odio malesuada suscipit non ac metus.</Label>
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
 </ContentPage>
