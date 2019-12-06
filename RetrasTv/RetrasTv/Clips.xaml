@@ -6,8 +6,9 @@
              mc:Ignorable="d"
              x:Class="RetrasTv.Clips">
 
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Image Source="logo.png" />
+        <Label Text="Clips !" x:Name="test_clip" />
+    </StackLayout>
 
 </ContentPage>
