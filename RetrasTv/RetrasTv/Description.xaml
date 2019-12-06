@@ -10,6 +10,14 @@
     <StackLayout>
         <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
         <StackLayout>
+                <Image Source="logo"
+               WidthRequest="{OnPlatform iOS=300, Android=250}"
+               HorizontalOptions="Center" />
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold" x:Name="desc"  IsVisible="True">Bonjour, nous sommes quatre potes ayant tous les trois la vingtaine ; Deasp, Efique, Venomania et SkyNokK.
+Nous jouons principalement sur PC mais également un peu sur PS4.
+Nous sommes également en stream tout les jours de 20-22h. Pour plus d'informations, pensez à checker le planning !
+
+N'hésitez pas à nous follow pour apprendre à nous connaître !</Label>
                 <Grid>
                     <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="0"/>
                     <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_1" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="1"/>
@@ -32,7 +40,7 @@ du haut de ses 21 pommes il répondra sans aucun scrupules à vos questions les 
 Je me présente je m'appelle Bruno j'suis d'origine portugaise.
 Je suis un joueur lambda qui kiff jouer à tout genre de jeux, je stream pour le fun.
 Si tu aimes les débats sur tout et rien et si tu aimes rigoler n'hésite pas à passer me voir.
-                    )+++
+                   
                     Le mercredi et vendredi </Label>
                 <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc4" IsVisible="False"></Label>
             </StackLayout>

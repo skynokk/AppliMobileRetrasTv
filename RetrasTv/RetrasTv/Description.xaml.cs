@@ -15,13 +15,13 @@ namespace RetrasTv
         public Description()
         {
             InitializeComponent();
-           
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)
         {
             if (desc3.IsVisible == true || desc2.IsVisible == true || desc4.IsVisible == true)
             {
+                
                 desc4.IsVisible = false;
                 desc2.IsVisible = false;
                 desc3.IsVisible = false;
@@ -33,6 +33,7 @@ namespace RetrasTv
         {
             if (desc3.IsVisible == true || desc4.IsVisible == true || desc1.IsVisible == true)
             {
+                
                 desc1.IsVisible = false;
                 desc4.IsVisible = false;
                 desc3.IsVisible = false;
@@ -44,6 +45,7 @@ namespace RetrasTv
         {
             if (desc4.IsVisible == true || desc2.IsVisible == true || desc1.IsVisible == true)
             {
+                
                 desc1.IsVisible = false;
                 desc2.IsVisible = false;
                 desc4.IsVisible = false;
@@ -56,6 +58,7 @@ namespace RetrasTv
         {
             if (desc3.IsVisible == true || desc2.IsVisible == true || desc1.IsVisible == true)
             {
+                
                 desc1.IsVisible = false;
                 desc2.IsVisible = false;
                 desc3.IsVisible = false;
