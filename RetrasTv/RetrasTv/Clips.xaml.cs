@@ -64,16 +64,16 @@ namespace RetrasTv
             {
                 return DownloadLibraryAsync();
             });
-
-            /*test_clip.Text = task.Result;*/
-            /*clip_recup obj = JsonConvert.DeserializeObject<clip_recup>(task.Result);
-            string test = obj.embed_url;*/
             
             JObject jsonVal = JObject.Parse(task.Result) as JObject;
             string val = (string)jsonVal["data"][0]["embed_url"];
             webViewStream.Source = val;
             val = (string)jsonVal["data"][1]["embed_url"];
             webViewStream2.Source = val;
+            val = (string)jsonVal["data"][2]["embed_url"];
+            webViewStream3.Source = val;
+            val = (string)jsonVal["data"][3]["embed_url"];
+            webViewStream4.Source = val;
         }
 
         static async Task<string> DownloadLibraryAsync()
