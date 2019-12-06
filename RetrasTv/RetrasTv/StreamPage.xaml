@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RetrasTv.StreamPage" >
+
+    <StackLayout>
+        <StackLayout>
+            <!-- <Button Text="Retour" HorizontalOptions="StartAndExpand" Clicked="Button_Clicked_Retour" /> -->
+            <ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+        </StackLayout>
+        <WebView x:Name="webViewStream" Source="https://player.twitch.tv/?channel=retrastv" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <WebView x:Name="webViewChat" Source="https://www.twitch.tv/embed/retrastv/chat" VerticalOptions = "LayoutOptions.FillAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
