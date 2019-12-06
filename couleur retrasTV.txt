@@ -2,3 +2,5 @@ Couleur Retras
 
 #f15a29
 #f7941d
+
+background:linear-gradient(#f7941d,#f15a29);

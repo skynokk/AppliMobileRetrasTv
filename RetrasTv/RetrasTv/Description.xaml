@@ -4,11 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="RetrasTv.Description">
+             x:Class="RetrasTv.Description"
+             BackgroundColor="White">
     
     <StackLayout>
         <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
         <StackLayout>
+                <Image Source="logo"
+               WidthRequest="{OnPlatform iOS=300, Android=250}"
+               HorizontalOptions="Center" />
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold" x:Name="desc"  IsVisible="True">Bonjour, nous sommes quatre potes ayant tous les trois la vingtaine ; Deasp, Efique, Venomania et SkyNokK.
+Nous jouons principalement sur PC mais également un peu sur PS4.
+Nous sommes également en stream tout les jours de 20-22h. Pour plus d'informations, pensez à checker le planning !
+
+N'hésitez pas à nous follow pour apprendre à nous connaître !</Label>
                 <Grid>
                     <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="0"/>
                     <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_1" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="1"/>
@@ -17,10 +26,23 @@
                 <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_2" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="0"/>
                 <ImageButton Source="logoTest" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform  iOS=150, Android=150}" Clicked="ImageButton_Clicked_3" BackgroundColor="Transparent" Margin="10,0" Grid.Row="0" Grid.Column="1"/>
                 </Grid>
-                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc3" IsVisible="False">Morbi sed ex vitae nulla condimentum mollis quis ac mauris. Aenean tempor ultrices hendrerit. Vivamus fermentum justo a nunc vulputate, eu laoreet quam volutpat. In hac habitasse platea dictumst. Maecenas malesuada enim turpis, a interdum elit commodo nec. Mauris iaculis, turpis at condimentum scelerisque, nisi magna finibus diam, eu commodo eros sem vel est. Aenean accumsan malesuada mi eu feugiat.</Label>
-                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc1" IsVisible="False">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ultrices justo, a mollis elit. Donec laoreet leo id leo feugiat, non placerat nisl mattis. Nullam pretium feugiat accumsan. Aliquam aliquam dui in ligula lobortis, quis viverra purus pretium. Aliquam at arcu nec diam finibus accumsan in ac justo. Nullam sit amet dictum libero, sed blandit urna. Praesent elementum, ligula et tempus dapibus, dui orci consequat sapien, sed volutpat lorem magna vitae magna. Nam pretium eleifend arcu, a fringilla odio facilisis id. Sed vel neque vel lorem fringilla suscipit non non est. Nunc finibus blandit neque, sed placerat ex. Donec facilisis pretium eros, quis rhoncus arcu posuere eget. Nam id semper magna. Curabitur volutpat orci eleifend arcu aliquet, eu porta dolor aliquam. Donec purus augue, mattis at aliquam eget, finibus non libero. Morbi ac velit sodales, fermentum massa cursus, accumsan nisi. Maecenas ac pellentesque nisi.</Label>
-                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc2" IsVisible="False">Sed ac urna sollicitudin felis porta ornare. Nam sit amet molestie est, faucibus bibendum ante. Donec id luctus leo. Etiam eget metus eu metus lobortis aliquet nec sit amet sem. Nullam eleifend in mauris et molestie. Nullam sollicitudin consequat dictum. Etiam at enim nec velit facilisis porta venenatis nec arcu.</Label>
-                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc4" IsVisible="False">Proin sodales, justo non aliquam fermentum, dolor tellus ultricies lacus, quis condimentum ante nisl porta libero. Nulla nec ex porttitor urna faucibus accumsan. Fusce quis molestie odio, eu porttitor nibh. Morbi a auctor ipsum. Phasellus vitae quam turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur eget nunc id odio malesuada suscipit non ac metus.</Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc1" IsVisible="False">Yo ! Moi c'est Jean. Je stream pour le plaisir sur tout type de jeux et j'échange avec vous, euh c'est quoi le mot ? 
+Ah oui, c'est interactif. 
+Bah du coup, mon stream est interactif, vous pouvez participer en parlant sur le chat ou en jouant avec moi. 
+                
+                    On se retrouve Mardi ou Jeudi</Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc2" IsVisible="False">
+Deasp alias Deasp, joueur League of legend et Hearthstone principalement, il excelle dans la mise en place de stream de qualité pour ses viewers.
+passioné, et en recherche constante de perfection, il améliore son skill au quotidien pour atteindre l'objectif ultime... le CHALLENGER.
+du haut de ses 21 pommes il répondra sans aucun scrupules à vos questions les plus intimes sur un stream chaleureux aux couleurs de la bonne humeur.
+                </Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc3" IsVisible="False">Salut !
+Je me présente je m'appelle Bruno j'suis d'origine portugaise.
+Je suis un joueur lambda qui kiff jouer à tout genre de jeux, je stream pour le fun.
+Si tu aimes les débats sur tout et rien et si tu aimes rigoler n'hésite pas à passer me voir.
+                   
+                    Le mercredi et vendredi </Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc4" IsVisible="False"></Label>
             </StackLayout>
         </ScrollView>
     </StackLayout>
