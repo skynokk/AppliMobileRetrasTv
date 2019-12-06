@@ -7,7 +7,9 @@
              x:Class="RetrasTv.Vod">
 
       <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
+        <ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+        <Image Source="logo.png" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
+        <Label Text="VOD !" />
       </StackLayout>
 
 </ContentPage>

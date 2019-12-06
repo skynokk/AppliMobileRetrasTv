@@ -70,8 +70,10 @@ namespace RetrasTv
             string test = obj.embed_url;*/
             
             JObject jsonVal = JObject.Parse(task.Result) as JObject;
-            string val = (string)jsonVal["data"][1]["embed_url"];
+            string val = (string)jsonVal["data"][0]["embed_url"];
             webViewStream.Source = val;
+            val = (string)jsonVal["data"][1]["embed_url"];
+            webViewStream2.Source = val;
         }
 
         static async Task<string> DownloadLibraryAsync()

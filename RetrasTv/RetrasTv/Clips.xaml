@@ -13,7 +13,8 @@
         </StackLayout>
 
         <!--<Label Text="Clips !" x:Name="test_clip" />-->
-        <WebView x:Name="webViewStream" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
+        <WebView x:Name="webViewStream" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <WebView x:Name="webViewStream2" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
     </StackLayout>
 
 </ContentPage>

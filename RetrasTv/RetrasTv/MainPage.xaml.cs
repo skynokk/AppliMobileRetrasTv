@@ -26,6 +26,7 @@ namespace RetrasTv
             ((Button)sender).IsEnabled = false;
             App.Current.MainPage = new Description();
         }
+
         private void Button_Clicked_Planning(object sender, EventArgs e)
         {
             ((Button)sender).Text = $"Planning";
@@ -39,6 +40,14 @@ namespace RetrasTv
             ((Button)sender).IsEnabled = false;
             App.Current.MainPage = new Clips();
         }
+
+        private void Button_Clicked_BestOf(object sender, EventArgs e)
+        {
+            ((Button)sender).Text = $"Bestof";
+            ((Button)sender).IsEnabled = false;
+            App.Current.MainPage = new Bestof();
+        }
+
         private void Button_Clicked_Vod(object sender, EventArgs e)
         {
             ((Button)sender).Text = $"Vod";
