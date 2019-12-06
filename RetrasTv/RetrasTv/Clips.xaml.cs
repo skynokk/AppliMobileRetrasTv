@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -67,10 +68,12 @@ namespace RetrasTv
             /*test_clip.Text = task.Result;*/
             /*clip_recup obj = JsonConvert.DeserializeObject<clip_recup>(task.Result);
             string test = obj.embed_url;*/
+            
             JObject jsonVal = JObject.Parse(task.Result) as JObject;
-            string val = (string)jsonVal["data"][0]["embed_url"];
-            test_clip.Text = val;
+            string val = (string)jsonVal["data"][1]["embed_url"];
+            webViewStream.Source = val;
         }
+
         static async Task<string> DownloadLibraryAsync()
         {
             string page = "https://api.twitch.tv/helix/clips?broadcaster_id=441022939";
@@ -90,6 +93,11 @@ namespace RetrasTv
                     }
                 }
             }
+        }
+
+        private void Button_Clicked_Retour(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
         }
     }
 }
