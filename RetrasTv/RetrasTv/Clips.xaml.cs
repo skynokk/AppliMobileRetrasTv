@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace RetrasTv
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Clips : ContentView
+    public partial class Clips : ContentPage
     {
         public Clips()
         {

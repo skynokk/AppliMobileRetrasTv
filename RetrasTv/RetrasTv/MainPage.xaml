@@ -15,9 +15,10 @@
                HorizontalOptions="Center" />
 
         <Button Text="Stream" Clicked="Button_Clicked_Stream" />
-        <Button Text="Planning" Clicked="Button_Clicked_Planning" />
         <Button Text="Qui Sommes-nous ?" Clicked="Button_Clicked_Info" />
-        <Button Text="Événement" Clicked="Button_Clicked_Event" />
+        <Button Text="Planning" Clicked="Button_Clicked_Planning" />
+        <Button Text="Clips" Clicked="Button_Clicked_CLips" />
+        <Button Text="Vod" Clicked="Button_Clicked_Vod" />
         
     </StackLayout>
 

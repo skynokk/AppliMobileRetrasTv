@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace RetrasTv
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Planning : ContentView
+    public partial class Planning : ContentPage
     {
         public Planning()
         {

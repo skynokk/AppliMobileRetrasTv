@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace RetrasTv
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Vod : ContentView
+    public partial class Vod : ContentPage
     {
         public Vod()
         {

@@ -20,21 +20,30 @@ namespace RetrasTv
             App.Current.MainPage = new StreamPage();
         }
 
-        private void Button_Clicked_Planning(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button_Clicked_Info(object sender, EventArgs e)
         {
             ((Button)sender).Text = $"Description";
             ((Button)sender).IsEnabled = false;
             App.Current.MainPage = new Description();
         }
-
-        private void Button_Clicked_Event(object sender, EventArgs e)
+        private void Button_Clicked_Planning(object sender, EventArgs e)
         {
+            ((Button)sender).Text = $"Planning";
+            ((Button)sender).IsEnabled = false;
+            App.Current.MainPage = new Planning();
+        }
 
+        private void Button_Clicked_Clips(object sender, EventArgs e)
+        {
+            ((Button)sender).Text = $"Clips";
+            ((Button)sender).IsEnabled = false;
+            App.Current.MainPage = new Clips();
+        }
+        private void Button_Clicked_Vod(object sender, EventArgs e)
+        {
+            ((Button)sender).Text = $"Vod";
+            ((Button)sender).IsEnabled = false;
+            App.Current.MainPage = new Vod();
         }
     }
 }
