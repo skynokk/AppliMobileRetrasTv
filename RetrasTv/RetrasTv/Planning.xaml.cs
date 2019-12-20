@@ -16,5 +16,10 @@ namespace RetrasTv
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked_Retour(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
+        }
     }
 }

@@ -6,9 +6,17 @@
              mc:Ignorable="d"
              x:Class="RetrasTv.Clips">
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Image Source="logo.png" />
-        <Label Text="Clips !" x:Name="test_clip" />
+    <StackLayout>
+        <StackLayout>
+            <ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+            <Image Source="logo.png" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
+        </StackLayout>
+
+        <!--<Label Text="Clips !" x:Name="test_clip" />-->
+        <WebView x:Name="webViewStream" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <WebView x:Name="webViewStream2" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <WebView x:Name="webViewStream3" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <WebView x:Name="webViewStream4" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
     </StackLayout>
 
 </ContentPage>

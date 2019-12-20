@@ -65,5 +65,9 @@ namespace RetrasTv
             }
             desc4.IsVisible = desc4.IsVisible == false;
         }
+        private void Button_Clicked_Retour(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
+        }
     }
 }
