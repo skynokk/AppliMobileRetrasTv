@@ -42,7 +42,9 @@ Je suis un joueur lambda qui kiff jouer à tout genre de jeux, je stream pour le
 Si tu aimes les débats sur tout et rien et si tu aimes rigoler n'hésite pas à passer me voir.
                    
                     Le mercredi et vendredi </Label>
-                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc4" IsVisible="False"></Label>
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  x:Name="desc4" IsVisible="False">Hello, Valentin, 23 ans. Je suis un joueur multigaming, 
+de World of Warcraft à Counter-Strike, en passant par Age of Empire.
+Avec un coté try hard, j’apprécie papoter avec vous et chill sur des jeux plus posay.</Label>
             </StackLayout>
         </ScrollView>
     </StackLayout>
