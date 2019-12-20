@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -64,16 +65,60 @@ namespace RetrasTv
             {
                 return DownloadLibraryAsync();
             });
-            
+
             JObject jsonVal = JObject.Parse(task.Result) as JObject;
-            string val = (string)jsonVal["data"][0]["embed_url"];
-            webViewStream.Source = val;
-            val = (string)jsonVal["data"][1]["embed_url"];
-            webViewStream2.Source = val;
-            val = (string)jsonVal["data"][2]["embed_url"];
-            webViewStream3.Source = val;
-            val = (string)jsonVal["data"][3]["embed_url"];
-            webViewStream4.Source = val;
+
+            /* string val = (string)jsonVal["data"][0]["embed_url"];
+             webViewStream.Source = val;
+             val = (string)jsonVal["data"][1]["embed_url"];
+             webViewStream2.Source = val;
+             val = (string)jsonVal["data"][2]["embed_url"];
+             webViewStream3.Source = val;
+             val = (string)jsonVal["data"][3]["embed_url"];
+             webViewStream4.Source = val;*/
+
+            int i = -1;
+            foreach (var valeur in jsonVal["data"])
+            {
+                i++;
+                WebView webView = new WebView
+                {
+                    Source = new UrlWebViewSource
+                    {
+                        Url = (string)jsonVal["data"][i]["embed_url"] + "&autoplay=false",
+                    },
+                    VerticalOptions = LayoutOptions.FillAndExpand,
+                    HorizontalOptions = LayoutOptions.Center
+                };
+                clipStackLayout.Children.Add(webView);
+                //clipScrollView.Content = webView;
+            }
+            /*
+            foreach (var data in jsonVa)
+            {
+                Console.WriteLine("{0} {1}", package.First.type, package.First.quantity);
+            }
+
+            for (int i = 0; i <= jsonVal["Data"].Count; i++)
+            {
+                WebView webView = new WebView
+                {
+                    Source = new UrlWebViewSource
+                    {
+                        Url = (string)jsonVal["data"][i]["embed_url"] + "&autoplay=false",
+                    },
+                    ClassId = "Webview" + 1,
+                    VerticalOptions = LayoutOptions.Fill,
+                    HorizontalOptions = LayoutOptions.FillAndExpand
+                };
+                clipStackLayout.Children.Add(webView);
+
+                /*this.Content = new StackLayout
+                {
+                    Children = {webView}
+                };
+            }*/
+
         }
 
         static async Task<string> DownloadLibraryAsync()
@@ -82,8 +127,6 @@ namespace RetrasTv
 
             using (HttpClient client = new HttpClient())
             {
-                // autre possibilité
-                //client.BaseAddress = new Uri(page);
 
                 client.DefaultRequestHeaders.Add("client-id", "v495cr8bd4ij2trdgeidujks3ec420");
                 using (HttpResponseMessage response = await client.GetAsync(page))
