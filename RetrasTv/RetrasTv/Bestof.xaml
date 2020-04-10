@@ -6,10 +6,15 @@
              mc:Ignorable="d"
              x:Class="RetrasTv.Bestof">
 
-    <StackLayout>
-        <ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+    <StackLayout x:Name="vidStackLayout">
+        <!--<ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
         <Image Source="logo.png" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
-        <Label Text="BEST OF !" />
+        <Label Text="BEST OF !" />-->
+        <StackLayout>
+            <ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+            <Image Source="logo.png" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
+        </StackLayout>
+        
     </StackLayout>
     
 </ContentPage>
