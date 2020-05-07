@@ -7,9 +7,12 @@
              x:Class="RetrasTv.Vod">
 
       <StackLayout>
-        <ImageButton Source="menu" HorizontalOptions="StartAndExpand" WidthRequest="{OnPlatform iOS=40, Android=40}" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
-        <Image Source="logo.png" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
-        <Label Text="VOD !" />
-      </StackLayout>
+        <AbsoluteLayout>
+            <Image Source="ondu.png" />
+            <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+            <Label Text="VOD !" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="180,15,50,50" TextColor="Wheat" FontFamily="BebasNeue"/>
+        </AbsoluteLayout>
+
+    </StackLayout>
 
 </ContentPage>
