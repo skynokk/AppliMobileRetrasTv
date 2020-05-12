@@ -128,7 +128,8 @@ namespace RetrasTv
             using (HttpClient client = new HttpClient())
             {
 
-                client.DefaultRequestHeaders.Add("client-id", "v495cr8bd4ij2trdgeidujks3ec420");
+                client.DefaultRequestHeaders.Add("client-id", "tvzmv9pqdb75jezxq3epy0plkkgd19");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer 8681g28ri9salj6zf5k4qk9zorliyz");
                 using (HttpResponseMessage response = await client.GetAsync(page))
                 {
                     using (HttpContent content = response.Content)
