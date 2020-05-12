@@ -14,14 +14,14 @@
                 <AbsoluteLayout Margin="0">
                     <Image Source="ondu.png" />
                     <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
-                    <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Desceiption !</Label>
+                    <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Description</Label>
                 </AbsoluteLayout>
-                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  IsVisible="True" TextColor="Black">Bonjour, nous sommes quatre potes ayant tous les trois la vingtaine,
+                <Label Margin="20,0" FontSize="Body" FontAttributes="Bold"  IsVisible="True" TextColor="Black">Bonjour, nous sommes un groupe de quatre potes ayant la vingtaine,
                     </Label>
-                <Label FontSize="Body"  Margin="20,0"  FontAttributes="Bold"   IsVisible="True" TextColor="orange"  >Deasp, Efique, Venomania et SkyNokK.</Label>
+                <Label FontSize="Body"  Margin="20,0"  FontAttributes="Bold"   IsVisible="True" TextColor="orange"  >Deasp, Efique, SkyNokK et Venomania.</Label>
                 <Label  FontSize="Body"  Margin="20,0"  FontAttributes="Bold"   IsVisible="True" TextColor="Black" >
-                    Nous jouons principalement sur PC mais également un peu sur PS4.
-Nous sommes également en stream tout les jours de 20-22h. Pour plus d'informations, pensez à checker le planning !
+                    Nous jouons principalement sur PC mais egalement sur console quand l'occasion se presente. 
+ Nous sommes en stream tous les jours de 20h a 22h sauf le samedi. Pour plus d'informations, pensez a checker le planning ou notre discord !
 
 N'hésitez pas à nous follow pour apprendre à nous connaître !</Label>
                 <Grid>

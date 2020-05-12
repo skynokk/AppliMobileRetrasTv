@@ -11,10 +11,10 @@
         <Image Source="logo.png" HorizontalOptions="FillAndExpand" WidthRequest="{OnPlatform iOS=60, Android=60}"/>
         <Label Text="BEST OF !" />-->
         <StackLayout>
-            <AbsoluteLayout>
+            <AbsoluteLayout Margin="0">
                 <Image Source="ondu.png" />
                 <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
-                <Label Text="Best OF !" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="200,15,50,50" TextColor="Wheat"/>
+                <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Best OF</Label>
             </AbsoluteLayout>
         </StackLayout>
         

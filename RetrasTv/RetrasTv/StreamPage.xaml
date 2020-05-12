@@ -8,10 +8,10 @@
 
     <StackLayout>
         <StackLayout>
-            <AbsoluteLayout>
+            <AbsoluteLayout Margin="0">
                 <Image Source="ondu.png" />
                 <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
-                <Label Text="Stream" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="200,15,50,50" TextColor="Wheat"/>
+                <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Stream</Label>
             </AbsoluteLayout>
         </StackLayout>
         <WebView x:Name="webViewStream" Source="https://player.twitch.tv/?channel=retrastv" VerticalOptions = "LayoutOptions.FillAndExpand"  TranslationY="-45" Margin="0" />
