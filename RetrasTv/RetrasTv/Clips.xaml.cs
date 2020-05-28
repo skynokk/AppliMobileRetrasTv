@@ -4,6 +4,7 @@ using System;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -78,21 +79,32 @@ namespace RetrasTv
              webViewStream4.Source = val;*/
 
             int i = -1;
-            foreach (var valeur in jsonVal["data"])
-            {
-                i++;
-                WebView webView = new WebView
-                {
-                    Source = new UrlWebViewSource
-                    {
-                        Url = (string)jsonVal["data"][i]["embed_url"] + "&autoplay=false",
-                    },
-                    VerticalOptions = LayoutOptions.FillAndExpand,
-                    HorizontalOptions = LayoutOptions.Center
-                };
-                clipStackLayout.Children.Add(webView);
+            //foreach (var valeur in jsonVal["data"])
+            //{
+                //i++;
+                //WebView webView = new WebView
+                //{
+                //    Source = new UrlWebViewSource
+                //    {
+                //        Url = (string)jsonVal["data"][i]["embed_url"] + "&autoplay=false",
+                //    },
+                //    VerticalOptions = LayoutOptions.FillAndExpand,
+                //    HorizontalOptions = LayoutOptions.Center
+                //};
+                //clipStackLayout.Children.Add(webView);
                 //clipScrollView.Content = webView;
-            }
+            //}
+
+            int test = jsonVal["data"].Count();
+            int u = --test;
+            webViewStream.Source = new UrlWebViewSource { Url = (string)jsonVal["data"][u]["embed_url"] + "&autoplay=false" };
+            u = --u;
+            webViewStream2.Source = new UrlWebViewSource { Url = (string)jsonVal["data"][u]["embed_url"] + "&autoplay=false" };
+            u = --u;
+            webViewStream3.Source = new UrlWebViewSource { Url = (string)jsonVal["data"][u]["embed_url"] + "&autoplay=false" };
+            u = --u;
+            webViewStream4.Source = new UrlWebViewSource { Url = (string)jsonVal["data"][u]["embed_url"] + "&autoplay=false" };
+
             /*
             foreach (var data in jsonVa)
             {
@@ -144,6 +156,12 @@ namespace RetrasTv
         private void Button_Clicked_Retour(object sender, EventArgs e)
         {
             App.Current.MainPage = new MainPage();
+        }
+
+        private void buttonPlus_Clicked(object sender, EventArgs e)
+        {
+            string lien = "https://www.twitch.tv/retrastv/clips?filter=clips&range=all";
+            Browser.OpenAsync(lien, BrowserLaunchMode.SystemPreferred);
         }
     }
 }

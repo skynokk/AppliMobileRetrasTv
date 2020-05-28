@@ -12,54 +12,10 @@ namespace RetrasTv
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Bestof : ContentPage
     {
-        public class video_recup
-        {
-            [JsonProperty(PropertyName = "id")]
-            public string id { get; set; }
-
-            [JsonProperty(PropertyName = "url")]
-            public string url { get; set; }
-
-            [JsonProperty(PropertyName = "embed_url")]
-            public string embed_url { get; set; }
-
-            [JsonProperty(PropertyName = "broadcaster_id")]
-            public string broadcaster_id { get; set; }
-
-            [JsonProperty(PropertyName = "broadcaster_name")]
-            public string broadcaster_name { get; set; }
-
-            [JsonProperty(PropertyName = "creator_id")]
-            public string creator_id { get; set; }
-
-            [JsonProperty(PropertyName = "creator_name")]
-            public string creator_name { get; set; }
-
-            [JsonProperty(PropertyName = "video_id")]
-            public string video_id { get; set; }
-
-            [JsonProperty(PropertyName = "game_id")]
-            public string game_id { get; set; }
-
-            [JsonProperty(PropertyName = "language")]
-            public string language { get; set; }
-
-            [JsonProperty(PropertyName = "title")]
-            public string title { get; set; }
-
-            [JsonProperty(PropertyName = "view_count")]
-            public string view_count { get; set; }
-
-            [JsonProperty(PropertyName = "created_at")]
-            public string created_at { get; set; }
-
-            [JsonProperty(PropertyName = "thumbnail_url")]
-            public string thumbnail_url { get; set; }
-        }
-
         public Bestof()
         {
-            InitializeComponent(); var task = Task.Run<string>(() =>
+            InitializeComponent(); 
+            var task = Task.Run<string>(() =>
             {
                 return DownloadLibraryAsync();
             });

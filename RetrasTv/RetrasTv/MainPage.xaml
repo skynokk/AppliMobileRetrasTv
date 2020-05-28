@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="RetrasTv.MainPage">
+             x:Class="RetrasTv.MainPage"
+             BackgroundColor="#f37921">
 
     <StackLayout>
         <Image Source="logo"
@@ -15,8 +16,7 @@
         <Button Text="Qui Sommes-nous ?" Clicked="Button_Clicked_Info" />
         <Button Text="Planning" Clicked="Button_Clicked_Planning" />
         <Button Text="Clips" Clicked="Button_Clicked_Clips" />
-        <Button Text="Best Of" Clicked="Button_Clicked_BestOf" />
-        <Button Text="Vod" Clicked="Button_Clicked_Vod" />
+        <Button Text="Vod/Best Of" Clicked="Button_Clicked_Vod" />
         
     </StackLayout>
 

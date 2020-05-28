@@ -7,21 +7,42 @@
              x:Class="RetrasTv.Clips">
 
     <StackLayout x:Name="clipStackLayout">
+        
+        <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+            <StackLayout>
+                <StackLayout>
+                    <AbsoluteLayout Margin="0">
+                        <Image Source="ondu.png" />
+                        <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+                        <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Clips</Label>
+                    </AbsoluteLayout>
+                </StackLayout>
 
-        <StackLayout>
-            <AbsoluteLayout Margin="0">
-                <Image Source="ondu.png" />
-                <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
-                <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Clips</Label>
-            </AbsoluteLayout>
-        </StackLayout>
+                <!--<Label Text="Clips !" x:Name="test_clip" />-->
+                <!--<WebView x:Name="webViewStream" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+                <WebView x:Name="webViewStream2" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+                <WebView x:Name="webViewStream3" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
+                <WebView x:Name="webViewStream4" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />-->
 
-        <!--<Label Text="Clips !" x:Name="test_clip" />-->
-        <!--<WebView x:Name="webViewStream" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
-            <WebView x:Name="webViewStream2" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
-            <WebView x:Name="webViewStream3" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />
-            <WebView x:Name="webViewStream4" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" />-->
-
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width= "420"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <WebView x:Name="webViewStream" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0"/>
+                    <WebView x:Name="webViewStream2" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1"/>
+                    <WebView x:Name="webViewStream3" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="2"/>
+                    <WebView x:Name="webViewStream4" Source="" VerticalOptions = "LayoutOptions.FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="3"/>
+                    <Button x:Name="buttonPlus" Text="En voir Plus" Clicked="buttonPlus_Clicked" Grid.Row="5"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
 
 </ContentPage>
