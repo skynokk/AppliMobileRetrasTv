@@ -6,15 +6,106 @@
              mc:Ignorable="d"
              x:Class="RetrasTv.Planning">
 
+
     <StackLayout>
-        <AbsoluteLayout Margin="0">
-            <Image Source="ondu.png" />
-            <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
-            <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Planning</Label>
-        </AbsoluteLayout>
-        <Image Source="planning"
-               HorizontalOptions="Center" 
-               VerticalOptions="CenterAndExpand"/>
+        <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+            <StackLayout>
+                <AbsoluteLayout Margin="0" Padding="0,0,0,0">
+                <Image Source="ondu.png" />
+                <ImageButton  Source="menu" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="{OnPlatform iOS=40, Android=40}" TranslationY="15" TranslationX="5" Clicked="Button_Clicked_Retour" BackgroundColor="Transparent"/>
+                <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">Planning</Label>
+            </AbsoluteLayout>
+
+                <Label TextColor="#f37921"  Margin="5,-80" FontSize="Title" >| PLANNING  :</Label>
+        
+                    <Grid Margin="20" Padding="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width= "80"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="#f37921"   CornerRadius="10"/>
+                    <Label Text="LUNDI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+              
+                    <Label Grid.Column="1"
+               Text="° 20H00 - 22H00"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+                    
+                    <BoxView Grid.Row="1" Color="#f37921"   CornerRadius="10 "/>
+                    <Label Grid.Row="1" Text="MARDI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+
+                    <Label Grid.Row="1" Grid.Column="1"
+               Text="° 20H00 - 22H00"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+
+                    <BoxView Grid.Row="2" Color="#f37921"   CornerRadius="10 "/>
+                    <Label Grid.Row="2" Text="MERCREDI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+
+                    <Label Grid.Row="2" Grid.Column="1"
+               Text="° 20H00 - 22H00"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+
+                    <BoxView Grid.Row="3" Color="#f37921"   CornerRadius="10 "/>
+                    <Label Grid.Row="3" Text="JEUDI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+
+                    <Label Grid.Row="3" Grid.Column="1"
+               Text="° 20H00 - 22H00"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+
+
+                    <BoxView Grid.Row="4" Color="#f37921"   CornerRadius="10 "/>
+                    <Label Grid.Row="4" Text="VENDREDI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+
+                    <Label Grid.Row="4" Grid.Column="1"
+               Text="° 20H00 - 22H00"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+
+
+
+                    <BoxView Grid.Row="5" Color="#e1e1e1"   CornerRadius="10 "/>
+                    <Label Grid.Row="5" Text="SAMDI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+
+                    <Label Grid.Row="5" Grid.Column="1"
+               Text="° REPOS"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+                    
+                    <BoxView Grid.Row="6" Color="#f37921"   CornerRadius="10 "/>
+                    <Label Grid.Row="6" Text="DIMANCHE"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" TextColor="White"/>
+
+                    <Label Grid.Row="6" Grid.Column="1"
+               Text="° 20H00 - 22H00"
+               VerticalOptions="Center" 
+                           TextColor="#f37921"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
-    
 </ContentPage>

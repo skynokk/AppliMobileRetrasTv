@@ -13,6 +13,7 @@
             <Label  HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="160,10,100,50" TextColor="Wheat">VOD</Label>
         </AbsoluteLayout>
 
-    </StackLayout>
+    
+        </StackLayout>
 
 </ContentPage>
